@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Logged</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-image:url('jET9FZ.gif'); background-repeat:repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .products-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product {
+            width: 40%;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 0 5px rgba(150, 50, 255, 0.4);
+            cursor: pointer;
+            color: magenta;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-description {
+            font-size: 1rem;
+            margin: 10px;
+            color: magenta;
+        }
+
+        .product-name {
+            color: magenta;
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .buy-button {
+            background-color: #9400FF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 20px;
+        }
+
+        .buy-button:hover {
+            background-color: #6E00CC;
+        }
+
+        /* Add glowing effect on hover */
+        .product:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(150, 50, 255, 0.6), 0 0 30px rgba(150, 50, 255, 0.3);
+        }
+        #websiteName {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 50px;
+            color: #fff;
+            background-color: transparent;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            width: 200px;
+            background-color: transparent;
+            color: magenta;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        .sidebar .logo_items {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .sidebar .logo_name {
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .sidebar .menu_items .menu_title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .sidebar .menu_items .menu_item {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar .menu_items .item {
+            margin-bottom: 15px;
+        }
+
+        .sidebar .menu_items .link {
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .sidebar .menu_items .link i {
+            margin-right: 10px;
+        }
+
+        .sidebar .menu_items .link:hover {
+            color: #c0c0c0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="sidebar locked">
+        <div class="logo_items flex">
+          <span class="nav_image">
+          </span>
+          <span class="logo_name">MENU</span>
+        </div>
+  
+        <div class="menu_container">
+          <div class="menu_items">
+            <ul class="menu_item">
+              <div class="menu_title flex">
+              </div>
+              <li class="item">
+                <a href="login.html" class="link flex">
+                  <i class="bx bx-home-alt"></i>
+                  <span>login</span>
+                </a>
+              </li>
+              <li class="item">
+                <a href="index.html" class="link flex">
+                  <i class="bx bx-grid-alt"></i>
+                  <span>Home</span>
+                </a>
+              </li>
+              <li class="item">
+                <a href="#" class="link flex">
+                  <i class="bx bx-flag"></i>
+                  <span>Credits</span>
+                </a>
+              </li>
+              <li class="item">
+                <a href="https://discord.com/invite/logged" class="link flex">
+                  <i class="bx bx-award"></i>
+                  <span>Discord</span>
+                  <li class="item">
+                    <a href="free.html" class="link flex">
+                      <i class="bx bx-award"></i>
+                      <span>free</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div id="websiteName">Logged Products</div>
+    <h1>Welcome to our Product Page</h1>
+    <div class="products-container">
+        <div class="product" onclick="redirectToDiscord()">
+            <div class="product-name">Flakes Stealer</div>
+            <div class="product-description">make a ticket in the link sent when clicken the button to buy.</div>
+            <button class="buy-button">Buy Now</button>
+        </div>
+        <div class="product" onclick="redirectToDiscord()">
+            <div class="product-name">Multi Tool</div>
+            <div class="product-description">make a ticket in the link sent when clicken the button to buy.</div>
+            <button class="buy-button">Buy Now</button>
+        </div>
+        <div class="product" onclick="redirectToDiscord()">
+            <div class="product-name">Obfuscator</div>
+            <div class="product-description">make a ticket in the link sent when clicken the button to buy.</div>
+            <button class="buy-button">Buy Now</button>
+        </div>
+        <div class="product" onclick="redirectToDiscord()">
+            <div class="product-name">Dox Tool</div>
+            <div class="product-description">make a ticket in the link sent when clicken the button to buy.</div>
+            <button class="buy-button">Buy Now</button>
+        </div>
+        <div class="product" onclick="redirectToDiscord()">
+            <div class="product-name">Token Checker</div>
+            <div class="product-description">make a ticket in the link sent when clicken the button to buy.</div>
+            <button class="buy-button">Buy Now</button>
+        </div>
+        <div class="product" onclick="redirectToDiscord()">
+            <div class="product-name">soon</div>
+            <div class="product-description">soon</div>
+            <button class="buy-button">Buy Now</button>
+        </div>
+    </div>
+
+    <script>
+        // Function to redirect to the Discord invite link
+        function redirectToDiscord() {
+            window.location.href = "https://discord.com/invite/logged";
+        }
+    </script>
+</body>
+</html>
